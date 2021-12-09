@@ -1,0 +1,12 @@
+html관련 검색시 
+
+ex) htmltag mdn (뒤에 mdn 을 붙혀주자. w3school 이용하지말라함)
+
+-------------------------------------------
+
+<tagname attributename="attrvalue" />
+
+<body>
+  <form>
+    <label for="">??</label>
+    <input id=""  ............/>

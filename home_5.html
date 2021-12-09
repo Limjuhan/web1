@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>welcom to my world</title>
+    <!-- inline은 height width를 가지지않음 고로 inline적용시 없어진다-->
+    <!-- box의 속성 1.margin 
+                    2.border 
+                    3.padding          -->
+    <style>
+      * {
+        border: 2px dashed black; /* 전체에 border스타일적용 */
+      }
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px; /* 시계방향으로 입력됨 */
+        padding: 20px;
+        background-color: thistle;
+      }
+      div {
+        /* display: inline;  div를 inline형태로바꾸면 inline은 높이,너비가 없기때문에 사라짐 */
+        /* body와 div의 위아래가 같은면 collapsing margin현상이 일어남. 같을때 마진 위아래를 수정하면 body와 div사이가 벌어지는게아니라  body
+        와 div둘다 같이 움직임. 이때 사용하는게 padding 이라고함.*/
+
+        padding: 10px;
+      }
+      #first {
+        background-color: whitesmoke;
+        width: 300px;
+        height: 200px;
+      }
+      #second {
+        background-color: aquamarine;
+        width: 200px;
+        height: 150px;
+      }
+      #third {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+      }
+      span {
+        border-style: dotted;
+      }
+    </style>
+    <!-- 옆에 다른요소가 못오는걸 "box", 같은줄에 위치할수있는것을 "inline"(ex:span,a,img) -->
+    <!-- margin :  box의 border(경계)의 바깥에있는공간 -->
+  </head>
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third"><span>Hello!</span></div>
+      </div>
+    </div>
+  </body>
+</html>
